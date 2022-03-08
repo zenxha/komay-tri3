@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+# Komay's Individual page
 
 You can use the [editor on GitHub](https://github.com/zenxha/komay-tri3/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
