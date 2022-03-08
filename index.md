@@ -1,8 +1,10 @@
 # Komay's Individual page
 
-You can use the [editor on GitHub](https://github.com/zenxha/komay-tri3/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+- Navigates notes and plans for each Tech Talk
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+- Contains Test Prep plans and participation for success on AP exam (required for test takers)
+
+- Navigates to Data Structures work, contains code snippets on problems solutions, links to GitHub for Code, Replit for runtime, or alternatives
 
 ### Markdown
 
