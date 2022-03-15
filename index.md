@@ -5,6 +5,7 @@
 - Find practice MCQ and FRQ to do together
 
 ## Week 1 Notes
+- Teacher Lecture [here](https://github.com/nighthawkcoders/nighthawk_csa/wiki/Tri-3:-Tech-Talk-0---Data-Structures)
 - Data structures are a way of organizing data 
 - A paradigm is a methodology to be followed for programming applications 
 - Imperative programming is a programming paradigm that uses statements that change a program's state.
