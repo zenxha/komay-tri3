@@ -1,6 +1,6 @@
 # Komay's Individual Page
 
-{% include navigation.html %}
+{% include nav.html %}
 
 ## Test Plans
 - Study group with Caleb and Chris
