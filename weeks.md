@@ -1,4 +1,4 @@
-{% include navigation.html %}
+{% include nav.html %}
 
 ## Week 1 Lab
 
