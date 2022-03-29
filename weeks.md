@@ -15,4 +15,5 @@
 ## Week 2 Lab
 
 [Week 2 Runtime](https://replit.com/@piptea/KomayTri3?embed=true)
+
 [Week 2 Review Ticket](https://github.com/zenxha/komay-tri3/issues/3)
