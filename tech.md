@@ -9,7 +9,7 @@
 - Whole pass is then performed to ensure that the array is fully sorted, and the algorithm knows to stop
 - **Time Complexity/ Big O Notation:** Bubble sort can vary in its Big O Notation, with a worst case scenario of O(n^2) and a best case scenario of O(n)
 - Code which we built off of in the implementation process
-``` 
+```java
 package src.week3.SortTypes;
 import java.util.*;
 
@@ -49,7 +49,7 @@ public class BubbleSort {
 
 ![Flowchart](https://media.geeksforgeeks.org/wp-content/cdn-uploads/20220203094305/Selection-Sort-Flowhchart.png)
 - Example algorithm of a selection sort which we built off of and implemented:
-``` 
+```java
 package src.week3.SortTypes;
 import java.util.*;
 
@@ -89,7 +89,7 @@ public class SelectionSort {
 
 ![Flowchart](https://media.geeksforgeeks.org/wp-content/cdn-uploads/Merge-Sort-Tutorial.png)
 - Sample algorithm which we built off to try and implement
-```
+```java
 package src.week3.SortTypes;
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -196,7 +196,7 @@ element.
 ![Flowchart](https://media.geeksforgeeks.org/wp-content/uploads/insertionsort.png)
 
 -  Algorithm we worked on implementing into the challenge
-```
+```java
 package src.week3.SortTypes;
 import java.util.*;
 
