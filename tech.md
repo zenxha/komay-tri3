@@ -2,6 +2,229 @@
 
 # Tech Talk Notes
 
+# Tech Talk 3
+
+## Bubble Sort
+- Swaps adajcent elements into the correct order
+- Whole pass is then performed to ensure that the array is fully sorted, and the algorithm knows to stop
+- **Time Complexity/ Big O Notation:** Bubble sort can vary in its Big O Notation, with a worst case scenario of O(n^2) and a best case scenario of O(n)
+- Code which we built off of in the implementation process
+``` 
+package src.week3.SortTypes;
+import java.util.*;
+
+public class BubbleSort {
+  public static void SortSortSort(List<Integer> list) {
+    Integer temp;
+    boolean sorted = false;
+
+    while (!sorted) {
+        sorted = true;
+        for (int i = 0; i < list.size()-1; i++) {
+            if (list.get(i).compareTo(list.get(i + 1)) > 0) {
+                temp = list.get(i);
+                list.set(i, list.get(i + 1));
+                list.set(i + 1, temp);
+                sorted = false;
+            }
+        }
+    }
+}
+}
+```
+
+### Implementation
+- Created individual file to contain the sorting algorithm developed
+- Utilized each sort as a method, which we use to sort the 5,000 element array when we use analyze()
+- Time is recorded each time we sort and added to an arraylist
+>- Using this list we can find total time, as well as the largest and smallest values and remove them if nessecary
+- Data is then displayed 
+
+![Output](https://files.catbox.moe/sdq6t1.png)
+
+## Selection Sort
+- Finds the minimun value element repeadly in an ascending pattern
+- Essentially has 2 arrays, in which the minimun value is then added to a sorted array, while algorithm finds the next minimun value in the unsorted array
+- **Time Complexity Formula/ Big O Notation:** O(n^2) is the notation because selection sort utilizes 2 arrays
+
+![Flowchart](https://media.geeksforgeeks.org/wp-content/cdn-uploads/20220203094305/Selection-Sort-Flowhchart.png)
+- Example algorithm of a selection sort which we built off of and implemented:
+``` 
+package src.week3.SortTypes;
+import java.util.*;
+
+
+public class SelectionSort {  
+    public static void SortSortSort(ArrayList<Integer> arr){  
+        for (int i = 0; i < arr.size() - 1; i++)  
+        {  
+            int index = i;  
+            for (int j = i + 1; j < arr.size(); j++){  
+                if (arr.get(j) < arr.get(index)){  
+                    index = j; //searching for lowest index  
+                }  
+            }  
+            int smallerNumber = arr.get(index);   
+            arr.set(index, arr.get(i)); 
+            arr.set(i, smallerNumber);  
+        }  
+    }  
+}
+```
+### Implementation
+- Implementation is similar to other sorts
+- Created individual file to contain the sorting algorithm developed
+- Utilized each sort as a method, which we use to sort the 5,000 element array when we use analyze()
+- Time is recorded each time we sort and added to an arraylist
+>- Using this list we can find total time, as well as the largest and smallest values and remove them if nessecary
+- Data is then displayed 
+
+![Output](https://files.catbox.moe/sxjm37.png)
+
+## Merge Sort
+- Merge Sort is a divide and conquer type of algorithm
+- Input array is divided into 2 halves, calls each half, and then merges the halves back together
+>- Merge is the key process and is executed after the halves are sorted
+- **Time Complexity/Big O Notation:** O(n * Log (n)) Because this is a logarithmic function, it means that the time taken based on the amount of elements isn't as affected, and is a rather efficent program. Even in a worst case scenario, the notation still reamins the same
+
+![Flowchart](https://media.geeksforgeeks.org/wp-content/cdn-uploads/Merge-Sort-Tutorial.png)
+- Sample algorithm which we built off to try and implement
+```
+package src.week3.SortTypes;
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class MergeSort {
+ 
+    private ArrayList<String> strList;
+ 
+    public static void SortSortSort(ArrayList<Integer> whole) {
+        ArrayList<Integer> left = new ArrayList<Integer>();
+        ArrayList<Integer> right = new ArrayList<Integer>();
+        int center;
+
+            center = whole.size()/2;
+            // copy the left half of whole into the left.
+            for (int i=0; i<center; i++) {
+                    left.add(whole.get(i));
+            }
+ 
+            //copy the right half of whole into the new arraylist.
+            for (int i=center; i<whole.size(); i++) {
+                    right.add(whole.get(i));
+            }
+ 
+            // Sort the left and right halves of the arraylist.
+            left  = mergeSort(left);
+            right = mergeSort(right);
+ 
+            // Merge the results back together.
+            merge(left, right, whole);
+      
+
+}
+
+
+
+      public static ArrayList<Integer>mergeSort(ArrayList<Integer> whole) {
+        ArrayList<Integer> left = new ArrayList<Integer>();
+        ArrayList<Integer> right = new ArrayList<Integer>();
+        int center;
+
+        if (whole.size() == 1) {    
+        return whole;
+    } else {
+          center = whole.size()/2;
+            // copy the left half of whole into the left.
+            for (int i=0; i<center; i++) {
+                    left.add(whole.get(i));
+            }
+ 
+            //copy the right half of whole into the new arraylist.
+            for (int i=center; i<whole.size(); i++) {
+                    right.add(whole.get(i));
+            }
+ 
+            // Sort the left and right halves of the arraylist.
+            left  = mergeSort(left);
+            right = mergeSort(right);
+ 
+            // Merge the results back together.
+            merge(left, right, whole);
+      
+            return whole;
+    }
+            
+}
+ 
+    public static void merge(ArrayList<Integer> left, ArrayList<Integer> right, ArrayList<Integer> whole) {
+        int leftIndex = 0;
+        int rightIndex = 0;
+        int wholeIndex = 0;
+ 
+        // As long as neither the left nor the right ArrayList has
+        // been used up, keep taking the smaller of left.get(leftIndex)
+        // or right.get(rightIndex) and adding it at both.get(bothIndex).
+        while (leftIndex < left.size() && rightIndex < right.size()) {
+            if ( (left.get(leftIndex).compareTo(right.get(rightIndex))) < 0) {
+                whole.set(wholeIndex, left.get(leftIndex));
+                leftIndex++;
+            } else {
+                whole.set(wholeIndex, right.get(rightIndex));
+                rightIndex++;
+            }
+            wholeIndex++;
+```
+### Implementation
+- Implementation is similar to other sorts
+- Created individual file to contain the sorting algorithm developed
+- Utilized each sort as a method, which we use to sort the 5,000 element array when we use analyze()
+- Time is recorded each time we sort and added to an arraylist
+>- Using this list we can find total time, as well as the largest and smallest values and remove them if nessecary
+- Data is then displayed 
+
+![Output](https://files.catbox.moe/o3fnf3.png)
+## Insertion Sort
+- Uses 2 arrays, sorted and unsorted, and sorts the elements within the unsorted array and addes them to the sorted array
+- **Time Complexity/Big O Notation:** O(n). This means that the time taken to sort is directly proportional to the amount of elemenets sorted. However, this is only the best case scenario. On average, and in the worst case, the Big O Notation is O(n^2) which notates a longer time taken
+- Algorithm Breakdown:
+>- Iterate from arr[1] to arr[n] over the array. 
+>- Compare the current element (key) to its predecessor. 
+>- If the key element is smaller than its predecessor, compare it to the elements before. Move the greater elements one position up to make space for the swapped 
+element.
+
+![Flowchart](https://media.geeksforgeeks.org/wp-content/uploads/insertionsort.png)
+
+-  Algorithm we worked on implementing into the challenge
+```
+package src.week3.SortTypes;
+import java.util.*;
+
+public class InsertionSort {
+  public static void SortSortSort(List<Integer> list) {
+      for (int j = 1; j < list.size(); j++) {
+          Integer current = list.get(j);
+          int i = j-1;
+          while ((i > -1) && (list.get(i) > current)) {
+              list.set(i+1, list.get(i));
+              i--;
+          }
+          list.set(i+1, current);
+      }
+  }
+}
+```
+### Implementation
+- Implementation is similar to other sorts
+- Created individual file to contain the sorting algorithm developed
+- Utilized each sort as a method, which we use to sort the 5,000 element array when we use analyze()
+- Time is recorded each time we sort and added to an arraylist
+>- Using this list we can find total time, as well as the largest and smallest values and remove them if nessecary
+- Data is then displayed 
+
+![Output](https://files.catbox.moe/cb727p.png)
+
+
 ### (TPT) Study Group Challenge 2
 
 Assignment:
