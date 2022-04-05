@@ -1,7 +1,7 @@
-package src.util;
+package util;
 
 import java.util.*;
-import src.util.LinkedList;
+import util.LinkedList;
 
 /**
  *  Implementation of Stack, using LinkedList (previous only).

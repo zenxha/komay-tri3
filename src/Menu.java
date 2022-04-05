@@ -1,13 +1,11 @@
-package src;
-
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 import java.util.ArrayList;
-import src.Week0.*;
-import src.Week1.*;
-import src.Week2.*;
-import src.Week3.*;
+import Week0.*;
+import Week1.*;
+import Week2.*;
+import Week3.*;
 /**
  * Menu: custom implementation
  * @author     John Mortensen
@@ -109,7 +107,7 @@ class Driver {
         // Row initialize
         MenuRow[] rows = new MenuRow[]{
           new MenuRow("Exit", () -> main(null)),
-          new MenuRow("Week 0", () -> Menu0.main(null)), 
+          new MenuRow("Week 0", () -> Menu0.main(null)),
           new MenuRow("Week 1", () -> Menu1.main(null)),
           new MenuRow("Week 2", () -> Menu2.main(null)),
           new MenuRow("Week 3", () -> Menu3.main(null)),

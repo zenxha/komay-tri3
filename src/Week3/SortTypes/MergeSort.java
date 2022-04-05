@@ -1,4 +1,4 @@
-package src.Week3.SortTypes;
+package Week3.SortTypes;
 import java.util.ArrayList;
 import java.util.Scanner;
 public class MergeSort {

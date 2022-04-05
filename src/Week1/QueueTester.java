@@ -1,5 +1,5 @@
-package src.Week1;
-import src.Week1.Queue;
+package Week1;
+import Week1.Queue;
 
 class QueueTester {
     public static void main(String[] args)

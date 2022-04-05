@@ -1,10 +1,10 @@
-package src.Week3;
+package Week3;
 
 import java.time.Duration;
 import java.time.Instant;
 import java.util.ArrayList;
 import java.util.Comparator;
-import src.Week3.SortTypes.*;
+import Week3.SortTypes.*;
 
 public class BigData {
     private final ArrayList<Integer> data = new ArrayList<>();

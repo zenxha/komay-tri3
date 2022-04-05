@@ -1,6 +1,6 @@
-package src.Week1;
+package Week1;
 
-import src.Week1.Queue;
+import Week1.Queue;
 
 import java.util.*;
 

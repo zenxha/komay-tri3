@@ -1,9 +1,9 @@
-package src.Week2;
+package Week2;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
-import src.util.*;
+import util.*;
 import java.lang.Math;
 
 public class CalculatorSqrt {

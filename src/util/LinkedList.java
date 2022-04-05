@@ -1,4 +1,4 @@
-package src.util;
+package util;
 /**
  *  Implementation of a Linked List with an Object reference as database;  forward and backward links point to adjacent Nodes.
  *

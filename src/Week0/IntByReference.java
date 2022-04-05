@@ -1,4 +1,4 @@
-package src.Week0;
+package Week0;
 
 public class IntByReference {
     private int value;

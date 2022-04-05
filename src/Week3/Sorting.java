@@ -1,4 +1,4 @@
-package src.Week3;
+package Week3;
 
 import java.time.Duration;
 import java.time.Instant;
@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.Collections;  
 
-import src.util.ConsoleColors;
+import util.ConsoleColors;
 
 public class Sorting {
 

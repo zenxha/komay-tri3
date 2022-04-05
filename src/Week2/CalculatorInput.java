@@ -1,10 +1,7 @@
-package src.Week2;
+package Week2;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
-import src.util.*;
-import java.util.Scanner;
+import java.util.*;
+
 import java.lang.Math;
 
 
