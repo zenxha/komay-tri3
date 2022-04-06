@@ -6,13 +6,6 @@ import Week0.*;
 import Week1.*;
 import Week2.*;
 import Week3.*;
-/**
- * Menu: custom implementation
- * @author     John Mortensen
- *
- * Uses String to contain Title for Option
- * Uses Runnable to store Class-Method to be run when Title is selected
- */
 
 // The Menu Class has a HashMap of Menu Rows
 public class Menu {
@@ -22,11 +15,7 @@ public class Menu {
     // MenuRow  {<Exit,Noop>, Option1, Option2, ...}
     Map<Integer, MenuRow> menu = new HashMap<>();
 
-    /**
-     *  Constructor for Menu,
-     *
-     * @param  rows,  is the row data for menu.
-     */
+
     public Menu(MenuRow[] rows) {
         int i = 0;
         for (MenuRow row : rows) {
