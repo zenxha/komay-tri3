@@ -1,3 +1,4 @@
+{% include nav.html %}
 # Key Learnings of the Trimester
 
 ## Week 0 | Dynamically creating a menu page 
