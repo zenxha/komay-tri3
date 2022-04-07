@@ -26,9 +26,10 @@ This is obviously much simpler and superior. I had used this method of dynamical
 ## Week 1 | Queues and Linked Lists
 
 ![a](https://files.catbox.moe/hi8sul.png)
+
 A concept that seems very abstract and hard to grasp. Creating queues requires pointing objects towards the previous and the next object. This essentially creates a list with objects "linked" together with pointers (hence the name, linked list :O). To be completely transparent, I had no idea how to do this so this was the week where I lost a lot of points. In the end, taking inspiration from the stack and queue code provided by the teacher, I slowly grasped what was happening collectively behind all the `setNextNode()`, head, tail, and generic types.
 
 ## Week 2 | Calculator and RPN
-lol
+I remember trying to comprehend RPN before the actual tech talk beacuse it seemed really complicated. It turns out it actually is really complicated.. The hardest part was actually turning a regular math expression into RPN. Using stacks, we sort operands and numbers in a way that allows for the program to calculate any valid string of expressions. I had a little bit of trouble with figuring out the parenthesis bit and hoo precedence affects the order in which operators enter and leave the stackbut after the in class demo, I grasped a firmer understanding of everything else. It was really cool to see what happens behind all the calculators we use today.
 ## Week 3 | Sorts
 lol
