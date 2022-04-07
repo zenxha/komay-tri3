@@ -20,10 +20,11 @@ Here's a rundown of how this one works (a lot cleaner)
 - Iterate through Array to instantiate objects and assign methods 
 - Invoke the method from the class that matches user input
 
-This is obviously much simpler and superior. I had used this method of dynamically creating classes in javascript but I never knew that there was a javaway to create classes with a line of code. I'll be using this from now on
+This is obviously much simpler and superior. I had used this method of dynamically creating classes in javascript but I never knew that there was a java way to create classes with a line of code. I'll be using this from now on
 
 ## Week 1 | Queues and Linked Lists
-lol
+A concept that seems very abstract and hard to grasp. Creating queues requires pointing objects towards the previous and the next object. This essentially creates a list with objects "linked" together with pointers (hence the name, linked list :O). To be completely transparent, I had no idea how to do this so this was the week where I lost a lot of points. In the end, taking inspiration from the stack and queue code provided by the teacher, I slowly grasped what was happening collectively behind all the `setNextNode()`, head, tail, and generic types.
+
 ## Week 2 | Calculator and RPN
 lol
 ## Week 3 | Sorts
