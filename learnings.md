@@ -26,3 +26,5 @@ This is obviously much simpler and superior. I had used this method of dynamical
 lol
 ## Week 2 | Calculator and RPN
 lol
+## Week 3 | Sorts
+lol
