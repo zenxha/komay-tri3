@@ -8,6 +8,6 @@
 - Compile all troublesome questions onto a team google doc
 - Work on those questions later with Chris and Caleb
 
-# Teacher 
+# Teacher tips
 - Use Intellij Debugger to review troublesome questions
 - 
