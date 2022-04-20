@@ -7,3 +7,7 @@
 - Mark/screenshot questions that I had trouble on
 - Compile all troublesome questions onto a team google doc
 - Work on those questions later with Chris and Caleb
+
+# Teacher 
+- Use Intellij Debugger to review troublesome questions
+- 
