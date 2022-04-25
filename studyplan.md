@@ -18,4 +18,4 @@
 
 ## Helpful Videos
 
-- htps;?outube.com/2w
+- [Inheritance and class structures](https://www.youtube.com/watch?v=K93mkEYFg_E)
