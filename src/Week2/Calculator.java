@@ -29,10 +29,9 @@ public class Calculator {
       
     }
 
-    // Helper definition for supported operators
+
     private final Map<String, Integer> SEPARATORS = new HashMap<>();
     {
-        // Map<"separator", not_used>
         SEPARATORS.put(" ", 0);
         SEPARATORS.put("(", 0);
         SEPARATORS.put(")", 0);
@@ -77,7 +76,7 @@ public class Calculator {
         // contains final list of tokens
         this.tokens = new ArrayList<>();
 
-        int start = 0;  // term split starting index
+        int start = 0;  // the starting index
         StringBuilder multiCharTerm = new StringBuilder();    // term holder
         for (int i = 0; i < this.expression.length(); i++) {
             Character c = this.expression.charAt(i);

@@ -3,9 +3,6 @@ package Week1;
 import java.util.Iterator;
 
 /**
- * Queue: custom implementation
- * @author     John Mortensen
- *
  * 1. Uses custom LinkedList of Generic type T
  * 2. Implements Iterable
  * 3. "has a" LinkedList for head and tail
@@ -13,11 +10,9 @@ import java.util.Iterator;
 public class Queue<T> implements Iterable<T> {
     LinkedList<T> head, tail;
 
-    /**
-     *  Add a new object at the end of the Queue,
-     *
-     * @param  data,  is the data to be inserted in the Queue.
-     */
+
+ // Add a new object at the end of the Queue
+
     public void add(T data) {
         // add new object to end of Queue
         LinkedList<T> tail = new LinkedList<>(data, null);

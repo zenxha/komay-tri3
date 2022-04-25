@@ -8,7 +8,7 @@ public class BBQ {
 
   public static void main(String[] args) {
     Queue<String> q = new LinkedList<String>();
-    String[] words = new String[] { "seven", "slimy", "snakes",       "sallying", "slowly", "slithered", "southward"};
+    String[] words = new String[] { "seven", "slimy", "snakes", "sallying", "slowly", "slithered", "southward"};
   
     for(String x : words) {
       System.out.println("Enqueued Data: "+ x);
@@ -29,3 +29,4 @@ public class BBQ {
     }
   }
 }
+
