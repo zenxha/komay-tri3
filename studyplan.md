@@ -10,4 +10,5 @@
 
 # Teacher tips
 - Use Intellij Debugger to review troublesome questions
-- 
+- Memorize the 4 things they always have to ask in the FRQ section
+- Be able to instantly recognize which of the 4 to use
