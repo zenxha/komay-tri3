@@ -8,7 +8,7 @@
 
 **20 Points - Meeting Tech Guidelines**
 - Individual Assignments and Completion
-  - [Filtered tasks](https://github.com/zenxha/musicgacha/projects/1?card_filter_query=assignee%3AChris-Ru) 
+  - [Filtered tasks](https://github.com/zenxha/musicgacha/projects/1?card_filter_query=assignee%3Azenxha) 
   - All tickets are fully complete
 - Requirements verified and accepted by the sponsor
   - [Sponsor reaction video](https://youtu.be/jQt1ty-cvco)
@@ -21,7 +21,7 @@
 **5 Points: Meeting new tech requirements**
 - Database with multiple tables
   - Utilized traditional database from Mort tech talk to [store user login information](https://github.com/zenxha/musicgacha/tree/main/src/main/java/com/musicgacha/controllers/database/person) in table format
-  - Quered our [JSON files](https://github.com/zenxha/musicgacha/tree/main/src/main/resources/static/json/characters) within [the roll controller](https://github.com/zenxha/musicgacha/blob/6a1ef76752ce09fdc7434989592676fa50d11ee0/src/main/java/com/musicgacha/controllers/RollController.java#L47-L51) to establish a JSON formatted database for "rolling" characters through our gacha system
+  - Queried our [JSON files](https://github.com/zenxha/musicgacha/tree/main/src/main/resources/static/json/characters) within [the roll controller](https://github.com/zenxha/musicgacha/blob/6a1ef76752ce09fdc7434989592676fa50d11ee0/src/main/java/com/musicgacha/controllers/RollController.java#L47-L51) using our own ["database package"](https://github.com/zenxha/musicgacha/blob/main/src/main/java/com/musicgacha/data/Chae.java) to establish a JSON formatted database for "rolling" characters through our gacha system
 - Authentication and authorization controls
   - User authentication is required via [spring security](https://github.com/zenxha/musicgacha/tree/main/src/main/java/com/musicgacha/controllers/security) to establish an account to store characters into their inventory (note: this inventory feature wasn't fully implemented at the end)
 - Meaningful Capture (ex: notes/upload and associated tables)
